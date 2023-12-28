@@ -33,3 +33,9 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+
+
+Route::get('/private', function () {
+    return response('Welcome! You are logged in.');
+})->middleware('auth');
