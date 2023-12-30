@@ -11,6 +11,9 @@ return Configuration::VERSION_2 + [
     'registerAuthenticationRoutes' => true,
     'configurationPath' => null,
 
+    'persist_access_token' => true,
+    'persist_id_token' => true,
+
     'guards' => [
         'default' => [
             Configuration::CONFIG_STRATEGY => Configuration::get(Configuration::CONFIG_STRATEGY, SdkConfiguration::STRATEGY_NONE),
